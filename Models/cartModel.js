@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-
+mongoose.set('strictQuery', true);
 const cartSchema = mongoose.Schema({
     id:String,
     main_image:String,

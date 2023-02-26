@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-
+mongoose.set('strictQuery', true);
 const AddSchema = mongoose.Schema({
     id:String,
     main_image:String,
