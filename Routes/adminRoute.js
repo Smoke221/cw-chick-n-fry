@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const { authenticate } = require("../middlewares/authenticate")
-const {mongoose} = require("mongoose)
+const {mongoose} = require("mongoose")
 
 const adminRouter = express.Router()
 
