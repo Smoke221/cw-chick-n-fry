@@ -5,6 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const { authenticate } = require("../middlewares/authenticate")
+const {mongoose} = require("mongoose)
 
 const adminRouter = express.Router()
 
@@ -56,7 +57,7 @@ adminRouter.post('/login', async (req, res) => {
     }
 })
 
-
+mongoose.set('strictQuery', true);
 const url = process.env.mongoURL;
 const client = new MongoClient(url, { useNewUrlParser: true });
 
