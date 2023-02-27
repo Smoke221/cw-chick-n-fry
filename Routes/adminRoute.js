@@ -57,7 +57,7 @@ adminRouter.post('/login', async (req, res) => {
     }
 })
 
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', true);
 const url = process.env.mongoURL;
 const client = new MongoClient(url, { useNewUrlParser: true });
 
