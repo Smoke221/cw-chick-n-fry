@@ -7,7 +7,7 @@ const userSchema = mongoose.Schema({
     confirm_email:String,
     password:String,
 })
-userSchema.set(option, value);
+
 const userModel = mongoose.model("user",userSchema)
 
 module.exports = {
