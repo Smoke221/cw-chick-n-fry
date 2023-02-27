@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-mongoose.set('strictQuery', true);
+
 const AddSchema = mongoose.Schema({
     id:String,
     main_image:String,
@@ -9,7 +9,6 @@ const AddSchema = mongoose.Schema({
     carbs:String,
     fat:String,
     protein:String,
-    userID:String
 })
 
 const AddModel = mongoose.model("breakfast",AddSchema)
