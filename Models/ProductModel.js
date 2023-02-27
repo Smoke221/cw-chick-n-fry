@@ -11,7 +11,7 @@ const AddSchema = mongoose.Schema({
     protein:String,
     userID:String
 })
-AddSchema.set(option, value);
+
 const AddModel = mongoose.model("breakfast",AddSchema)
 
 module.exports = {
