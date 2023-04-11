@@ -10,6 +10,16 @@ userRouter.get("/", async (req, res) => {
     res.send({ "msg": "Chick-n-Fry SignUp Page" })
 })
 
+userRouter.get("/breakfast", async (req,res) => {
+    try{
+        const data = await AddModel.find()
+        res.send({"msg":"All the products","data":data})
+    }
+    catch (err) {
+        res.send({ 'error': err.message })
+    }
+})
+
 // {
 //     "name":"Shreya",
 //     "email":"shreya@hotmail.com",
