@@ -1,5 +1,6 @@
 const express = require("express")
 const { userModel } = require("../Models/userModel")
+const {AddModel} = require("../Models/ProductModel")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcrypt")
 const { authenticate } = require("../middlewares/authenticate")
